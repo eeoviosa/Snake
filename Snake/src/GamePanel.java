@@ -4,8 +4,6 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.Random;
 
-import javax.swing.JPanel;
-
 @SuppressWarnings("serial")
 public class GamePanel extends JPanel implements ActionListener {
 	static final int SCREEN_WIDTH = 600;
@@ -151,11 +149,11 @@ public class GamePanel extends JPanel implements ActionListener {
 		g.setColor(Color.red);
 		g.setFont(new Font("Ink Free", Font.BOLD, 35));
 		FontMetrics metrics2 = getFontMetrics(g.getFont());
-		g.drawString("Game Over, dont suck next time",
-				(SCREEN_WIDTH - metrics2.stringWidth("Game Over, dont suck next time")) / 2, SCREEN_HEIGHT / 2);
-		g.drawString("Do you want to replay \"y\" or \"n\"",
-				(SCREEN_WIDTH - metrics2.stringWidth("Do u want to replay, \"y\" or \"n\"")) / 2,
-				(int) (SCREEN_HEIGHT * 1.2) / 2);
+		g.drawString("Game Over",
+				(SCREEN_WIDTH - metrics2.stringWidth("Game Over")) / 2, SCREEN_HEIGHT / 2);
+		
+		
+		
 		
 		
 		
@@ -207,8 +205,6 @@ public class GamePanel extends JPanel implements ActionListener {
 					direction = 'D';
 					break;
 				}
-			
-				
 			
 						}
 				}
