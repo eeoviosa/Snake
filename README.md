@@ -1,2 +1,2 @@
-The code will run on the port labeled desktop, if the port is not shown add manually, port 6080.
-password is "vscode"
+# Snake-Game
+The code will run on a port labeled desktop(6080). If the port is not found, add it manually. The password is "vscode".
